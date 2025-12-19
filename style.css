@@ -177,6 +177,38 @@ body {
     padding: 30px;
     border-radius: 30px;
 }
+.botao-teatro {
+    text-decoration: none !important; /* Remove o sublinhado azul */
+    display: inline-block;
+    cursor: pointer;
+}
+
+.botao-teatro .badge-location {
+    background-color: #007bff; /* Cor de fundo (ajuste se necessário) */
+    color: #ffffff !important;  /* FORÇA O TEXTO A FICAR BRANCO */
+    padding: 8px 15px;
+    border-radius: 4px;
+    font-weight: bold;
+    display: inline-block;
+    transition: all 0.3s ease;
+    border: 1px solid transparent;
+}
+
+/* Efeito ao passar o mouse */
+.botao-teatro:hover .badge-location {
+    background-color: #0056b3; /* Escurece o fundo no hover */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* Adiciona uma sombra suave */
+    transform: translateY(-2px); /* Pequeno pulo para cima */
+}
+    .btn-location {
+        text-decoration: none;
+        display: inline-block;
+        transition: opacity 0.3s;
+    }
+    .btn-location:hover {
+        opacity: 0.8;
+        cursor: pointer;
+    }
 
 .btn-confirm {
     background-color: var(--accent-blue);
